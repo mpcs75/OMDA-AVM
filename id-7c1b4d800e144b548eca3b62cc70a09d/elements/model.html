@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Architectuurvolwassenheidsmatrix DYA</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Architectuurvolwassenheidsmatrix DYA</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Dit model is een weergave van whitepaper "Architectuurvolwassenheidsmatrix DYA versie 3.0.1" en is bedoeld voor zelfstudie. Binnen het model heb ik diverse kleine aanpassingen doorgevoerd waardoor het niet meer &#233;&#233;n op &#233;&#233;n overkomt met het origineel. Deze aanpassingen hebben vooral te maken met het 'labelen' van archimate elementen.
+
+DYA is een geregistreerd merk  van Sogeti.
+https://www.sogeti.nl/expertises/methodes/dya</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"id-7c1b4d800e144b548eca3b62cc70a09d", type:"ArchimateModel", name:decodeURL("Architectuurvolwassenheidsmatrix+DYA"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-8908e129cdd14fc6b806b19ecac10a18", contenttype:"Folder"});
+								dataFolders.push({id:"id-8908e129cdd14fc6b806b19ecac10a18", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-8908e129cdd14fc6b806b19ecac10a18", contentid:"id-6a7d426650474bcca6185a2c44d7a18e", contenttype:"Folder"});
+									dataFolders.push({id:"id-6a7d426650474bcca6185a2c44d7a18e", type:"Folder", name:decodeURL("Aandachtsgebieden"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-62f5dcce4c6c49febb3ed7f098aeecd2", contenttype:"Capability"});
+											dataElements.push({id:"id-62f5dcce4c6c49febb3ed7f098aeecd2", type:"Capability", specialization:decodeURL(""), name:decodeURL("Aansluiten+op+businessstrategie"), documentation:decodeURL("Architectuur+vindt+zijn+rechtvaardiging+in+het+ondersteunen+en+mogelijk+maken+van+businessdoelen.+Aansluiting+op+businessstrategie%2C+de+mate+waarin+het+architectuurproces+is+afgestemd+met+wat+de+business+wil+en+kan%2C+is+daarom+zeer+belangrijk.+Het+gaat+hierbij+om+de+relatie+tussen+de+keuzes+die+in+de+architectuur+worden+gemaakt+en+de+businessdoelstellingen.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-eb1c63f665b4414381436b30dc1c5d71", contenttype:"Capability"});
+											dataElements.push({id:"id-eb1c63f665b4414381436b30dc1c5d71", type:"Capability", specialization:decodeURL(""), name:decodeURL("Aansluiten+op+realisatietraject"), documentation:decodeURL("Architectuur+dient+om+veranderingen+op+zodanige+wijze+te+sturen%2C+dat+de+businessdoelen+%28optimaal%29+gerealiseerd+worden.+Aansluiting+op+het+realisatietraject+%28programma%2C+project%2C+beheer%2C+onderhoud%29+is+daarom+heel+belangrijk.+Of+het+nu+gaat+om+proces-%2C+organisatie-+of+ICT-ontwikkeling.+Hoe+vindt+afstemming+plaats+tussen+het+architectuurproces+en+het+realisatieproces%3F")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-0321840003554c66876d86c353a18757", contenttype:"Capability"});
+											dataElements.push({id:"id-0321840003554c66876d86c353a18757", type:"Capability", specialization:decodeURL(""), name:decodeURL("Aansluiten+op+veranderportfolio"), documentation:decodeURL("Binnen+een+organisatie+is+doorgaans+sprake+van+een+%28groot%29+aantal+ontwikkelingen+op+allerlei+gebied+die+min+of+meer+gelijktijdig+plaatsvinden.+Sommige+van+deze+ontwikkelingen+zijn+afhankelijk+van+elkaar.+Van+belang+is+de+aansluiting+op+het+veranderportfolio%2C+architectuur+is+namelijk+het+stuurinstrument+om+de+inhoudelijke+co%C3%B6rdinatie+van+ontwikkelingen+vorm+te+geven.+Architectuur+moet+dan+uiteraard+wel+hiervoor+gehanteerd+worden.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-3badeef5fc964e2a817582585adc3a5c", contenttype:"Capability"});
+											dataElements.push({id:"id-3badeef5fc964e2a817582585adc3a5c", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuurmethode+volgen"), documentation:decodeURL("Voor+het+ontwikkelen+van+architecturen+wordt+een+bepaalde+methode+of+werkwijze+gevolgd+met+activiteiten%2C+technieken%2C+tools+en+producten+%28deliverables%29.+Belangrijk+hierbij+is+dat+de+gevolgde+architectuurmethode+%28of+methoden%29+aansluit+bij+de+cultuur+en+werkwijze+van+de+organisatie+en+de+daarbij+horende+aanpak+rond+architectuur.+Daarbij+helpt+het+als+de+architecten+allen+dezelfde+methode%28n%29+hanteren.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-c606f5b6e79047038c23eea299be3211", contenttype:"Capability"});
+											dataElements.push({id:"id-c606f5b6e79047038c23eea299be3211", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuurtools+gebruiken"), documentation:decodeURL("Het+werken+onder+architectuur+kan+ondersteund+worden+door+het+gebruik+van+architectuurtools.+Wanneer+deze+tools+ge%C3%AFntegreerd+gebruikt+worden%2C+liefst+met+ondersteuning+van+een+repository+is+de+effici%C3%ABntie+en+de+effectiviteit+van+deze+tools+het+grootst.+Daarbij+moeten+deze+tools+wel+geschikt+zijn+voor+de+gekozen+methoden.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-2341603fe50c4cf8a9ade9461bd022dd", contenttype:"Capability"});
+											dataElements.push({id:"id-2341603fe50c4cf8a9ade9461bd022dd", type:"Capability", specialization:decodeURL(""), name:decodeURL("Begroten+en+plannen"), documentation:decodeURL("Ook+het+ontwikkelen+van+architecturen+kan+begroot+en+gepland+worden.+Serieuze+begroting+en+planning+helpt+om+architectuur+uit+de+%E2%80%98mystieke%E2%80%99+sfeer+te+halen.+Bovendien+weet+de+organisatie+beter+wat+ze+wanneer+kan+verwachten.+De+manier+van+begroten+en+plannen+kan+vari%C3%ABren+van+incidenteel+planningen+opstellen+tot+het+verzamelen+en+gebruiken+van+ervaringen+uit+het+verleden.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-5dedbcdee5a44452ae83df75e5af8af8", contenttype:"Capability"});
+											dataElements.push({id:"id-5dedbcdee5a44452ae83df75e5af8af8", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuurproces+beheren"), documentation:decodeURL("Zoals+elk+proces+moet+ook+het+architectuurproces+beheerd+worden.+Alleen+dan+kan+bewaakt+worden+dat+het+een+effectief+en+effici%C3%ABnt+proces+wordt+en+blijft.+Beheer+van+het+architectuurproces+betekent+dat+de+cyclus+evalueren%2C+formuleren+verbeterpunten%2C+en+uitvoeren+periodiek+doorlopen+wordt.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-1ec56d25bc5b401f8dae04c12f7d19f3", contenttype:"Capability"});
+											dataElements.push({id:"id-1ec56d25bc5b401f8dae04c12f7d19f3", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuurproducten+beheren"), documentation:decodeURL("Het+is+niet+voldoende+om+architectuurproducten+%28zoals+standaarden%2C+richtlijnen+en+modellen%29+op+te+leveren%2C+ze+moeten+ook+beheerd+worden.+Beheer+van+architectuurproducten+betekent+dat+er%2C+wanneer+nodig%2C+updates+worden+gemaakt+en+dat+verouderde+producten+worden+verwijderd.+Actief+beheer+zorgt+ervoor+dat+de+architectuur+op+elk+moment+up-to-date+en+bruikbaar+is.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-da0373ce6ee340ce9cacf27340619107", contenttype:"Capability"});
+											dataElements.push({id:"id-da0373ce6ee340ce9cacf27340619107", type:"Capability", specialization:decodeURL(""), name:decodeURL("Veranderingen+bewaken"), documentation:decodeURL("Zeggen+dat+er+volgens+de+architectuur+veranderd+moet+worden+is+doorgaans+niet+voldoende.+Zonder+bewakingsmechanisme+zal+de+verleiding+vaak+te+groot+zijn+om+toch+de+weg+van+de+minste+weerstand+te+kiezen+en+de+architectuur+op+punten+te+negeren.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-02e2fc2cfec44d11a4b521736d7042e4", contenttype:"Capability"});
+											dataElements.push({id:"id-02e2fc2cfec44d11a4b521736d7042e4", type:"Capability", specialization:decodeURL(""), name:decodeURL("Commiteren+en+motiveren+door+management"), documentation:decodeURL("Commitment+en+motivatie+van+het+management+zijn+belangrijke+factoren+bij+het+succesvol+maken+en+gebruiken+van+architectuur.+Onder+de+belanghebbenden+vallen+niet+alleen+de+architecten%2C+maar+ook+en+vooral+het+hogere+business-+en+ICT-management+en+het+projectmanagement.+Business-+en+ICT-management+zijn+vooral+belangrijk+in+de+voorwaardenscheppende+sfeer.+Het+architectuurproces+krijgt+dan+voldoende+tijd%2C+geld+en+middelen+en+de+architectuurproducten+%28architectuurprincipes+en+-modellen%29+worden+gedragen+door+het+management.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-5b51ac742e1c4b37a4d527da649f3cd9", contenttype:"Capability"});
+											dataElements.push({id:"id-5b51ac742e1c4b37a4d527da649f3cd9", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuur+gebruiken"), documentation:decodeURL("Het+opstellen+van+een+architectuur+is+niet+waar+het+uiteindelijk+om+gaat.+Architectuur+heeft+een+doel.+Het+gaat+erom+dat+er+iets+met+de+architectuur+bereikt+wordt%3A+het+gebruik+van+architectuur.+In+de+praktijk+kan+een+architectuur+op+verschillende+manieren+gebruikt+worden%3A+puur+informatief%2C+als+stuurmiddel+voor+individuele+projecten+en+als+managementinstrument+voor+de+gehele+organisatie.+In+toenemende+mate+van+volwassenheid+wordt+architectuur+meer+en+meer+gebruikt+als+stuurmiddel+voor+een+steeds+groter+deel+van+de+organisatie+om+de+juiste+dingen+en+de+dingen+juist+te+doen.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-7d74e078a6214a0fa2d400d316f48b5d", contenttype:"Capability"});
+											dataElements.push({id:"id-7d74e078a6214a0fa2d400d316f48b5d", type:"Capability", specialization:decodeURL(""), name:decodeURL("Interacteren+en+samenwerken"), documentation:decodeURL("Het+ontwikkelen+van+architecturen+vergt+veel+interactie+en+samenwerking+tussen+diverse+belanghebbenden%2C+zoals+businessmanagers%2C+proceseigenaren%2C+informatiemanagers%2C+projectmanagers+en+ICT-ers.+Deze+interactie+en+samenwerking+zijn+van+groot+belang+voor+een+goed+lopend+architectuurproces%2C+zowel+om+de+eisen+voor+de+architectuur+helder+te+krijgen+als+om+de+resultaten+van+het+architectuurproces+te+delen+met+de+gebruikers+van+de+architectuur+%28zoals+projecten+en+beheer%29.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-b081c8b14ac24cf7912fbb5b8b3dc27a", contenttype:"Capability"});
+											dataElements.push({id:"id-b081c8b14ac24cf7912fbb5b8b3dc27a", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuurrol+invullen"), documentation:decodeURL("Het+vak+van+architect+is+veeleisend.+Een+architect+dient+niet+alleen+te+beschikken+over+vaardigheden+om+architecturen+te+ontwikkelen%2C+maar+ook+kennis+en+begrip+te+hebben+van+procesontwikkeling%2C+systeemontwikkeling+en+infrastructuren.+En+alsof+dat+al+niet+genoeg+is+worden+aan+de+sociale+en+managementvaardigheden+van+architecten+hoge+eisen+gesteld.+Voor+het+verkrijgen+van+deze+kennis+en+vaardigheden+zijn+opleidingen+nodig.+Invulling+van+de+architectuurrol+is+dan+ook+een+belangrijk+aandachtsgebied.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-cf93a2e1625f426ba951dcab2fc66462", contenttype:"Capability"});
+											dataElements.push({id:"id-cf93a2e1625f426ba951dcab2fc66462", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuurkwaliteit+borgen"), documentation:decodeURL("Uiteraard+is+ook+de+kwaliteit+van+de+architectuur+van+belang+voor+het+succes+van+het+werken+onder+architectuur.+Kwaliteitsborging+heeft+tot+doel+deze+kwaliteit+te+garanderen.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-161b688cf8c54a56ab97de4d48e4fc95", contenttype:"Capability"});
+											dataElements.push({id:"id-161b688cf8c54a56ab97de4d48e4fc95", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuur+opstellen"), documentation:decodeURL("Het+opstellen+van+architectuur+kan+op+verschillende+wijzen+aangepakt+worden%2C+vari%C3%ABrend+van+ge%C3%AFsoleerde%2C+autonome+projecten+tot+een+continu+faciliterend+proces+waarbij+alle+architectuurontwikkelingen+onderling+zijn+afgestemd+en+de+juiste+partijen+zijn+betrokken.+In+het+eerste+geval+ligt+de+nadruk+op+architectuur+als+product%2C+in+het+tweede+geval+op+architectuur+als+proces.+Hoe+beter+het+ontwerpen+van+architectuur+als+continu+proces+is+ingebed+in+de+veranderprocessen+van+de+organisatie%2C+hoe+groter+de+kans+op+het+leveren+van+werkelijk+toegevoegde+waarde.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-62f8d46c00c7492289d7fce6eee20756", contenttype:"Capability"});
+											dataElements.push({id:"id-62f8d46c00c7492289d7fce6eee20756", type:"Capability", specialization:decodeURL(""), name:decodeURL("Relateren+met+bestaande+situatie"), documentation:decodeURL("Architectuur+wordt+vaak+geassocieerd+met+een+gewenste+situatie%3A+de+zogenaamde+doelsituatie.+De+meeste+organisaties+hebben+echter+ook+te+maken+met+een+bestaande+situatie%2C+die+historisch+zo+gegroeid+is+%28en+vaak+niet+onder+architectuur%29.+Het+is+met+het+oog+op+de+toepasbaarheid+van+de+architectuur+belangrijk+om+te+beseffen+dat+er+een+bestaande+situatie+is+met+zijn+eigen+mogelijkheden+en+onmogelijkheden.+Als+deze+relatie+met+de+bestaande+situatie+genegeerd+wordt%2C+bestaat+het+risico+dat+de+organisatie+weinig+kan+met+de+mooie+toekomstbeelden+van+de+architectuur.")});
+										dataFoldersContent.push({folderid:"id-6a7d426650474bcca6185a2c44d7a18e", contentid:"id-dc65d7582da54a1c99c9fb4c9898cfc0", contenttype:"Capability"});
+											dataElements.push({id:"id-dc65d7582da54a1c99c9fb4c9898cfc0", type:"Capability", specialization:decodeURL(""), name:decodeURL("Verantwoordelijkheden+en+bevoegdheden+beleggen"), documentation:decodeURL("Als+de+verantwoordelijkheden+en+bevoegdheden+met+betrekking+tot+het+architectuurdenken+en+-werken+voor+iedereen+helder+en+eenduidig+zijn+belegd%2C+wordt+voorkomen+dat+discussies+en+meningsverschillen+rondom+architectuur+in+een+vacu%C3%BCm+raken.+Bovendien+kunnen+partijen+dan+aangesproken+worden+op+hun+eigen+specifieke+bijdrage+aan+de+architectuur.")});
+
+									dataFoldersContent.push({folderid:"id-8908e129cdd14fc6b806b19ecac10a18", contentid:"id-597b0a54e10e462cac230328237429b2", contenttype:"Folder"});
+									dataFolders.push({id:"id-597b0a54e10e462cac230328237429b2", type:"Folder", name:decodeURL("Praktijken"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-597b0a54e10e462cac230328237429b2", contentid:"id-30bad1408dd84ca28d7eab35c8370e2e", contenttype:"Capability"});
+											dataElements.push({id:"id-30bad1408dd84ca28d7eab35c8370e2e", type:"Capability", specialization:decodeURL(""), name:decodeURL("Architectuur+praktijk"), documentation:decodeURL("Een+architectuur+praktijk+bestaat+uit+een+combinatie+van+mensen+met+architectuurkennis.+architectuurprocessen%2C+en+architectuur+middelen.+%0D%0ADoor+de+juiste+inzet+van+deze+combinatie+is+een+organisatie+in+staat+om+te+werken+onder+architectuur.")});
+
+
+
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-f40889ea876f4f24a54a7ad32ef04aff", contenttype:"Folder"});
+								dataFolders.push({id:"id-f40889ea876f4f24a54a7ad32ef04aff", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-8209129a5f9a44a0902670c84d970a73", contenttype:"Folder"});
+								dataFolders.push({id:"id-8209129a5f9a44a0902670c84d970a73", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-0c29407fd02c47c495ec2fda119d6313", contenttype:"Folder"});
+								dataFolders.push({id:"id-0c29407fd02c47c495ec2fda119d6313", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-302e41d61fe046929d6fc7afc4480ad8", contenttype:"Folder"});
+								dataFolders.push({id:"id-302e41d61fe046929d6fc7afc4480ad8", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-5dd1dfd1b92a40c4b46a466d7fa60586", contenttype:"Folder"});
+								dataFolders.push({id:"id-5dd1dfd1b92a40c4b46a466d7fa60586", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-c280b8de600f4affa071ab41174206e1", contenttype:"Folder"});
+								dataFolders.push({id:"id-c280b8de600f4affa071ab41174206e1", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-ff774683239d49a587a32d5de0c1a2a2", contenttype:"Folder"});
+								dataFolders.push({id:"id-ff774683239d49a587a32d5de0c1a2a2", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-0840b97dae2443ffb0a64534c3ba26c0", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-0840b97dae2443ffb0a64534c3ba26c0", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-161b688cf8c54a56ab97de4d48e4fc95"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-bea0a72f3c724ae1837bbff64efdf95a", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-bea0a72f3c724ae1837bbff64efdf95a", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-5b51ac742e1c4b37a4d527da649f3cd9"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-0d4c7179d7c54c2daa30a4d473008b85", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-0d4c7179d7c54c2daa30a4d473008b85", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-62f5dcce4c6c49febb3ed7f098aeecd2"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-c2954e76e1894946b6592c684b7ca636", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-c2954e76e1894946b6592c684b7ca636", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-eb1c63f665b4414381436b30dc1c5d71"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-93c5cad3df324ae09b2decf74f43773a", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-93c5cad3df324ae09b2decf74f43773a", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-62f8d46c00c7492289d7fce6eee20756"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-575d224b826949e4940d452889948a57", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-575d224b826949e4940d452889948a57", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-dc65d7582da54a1c99c9fb4c9898cfc0"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-51646ff64242421c92f3a4197d4b39e9", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-51646ff64242421c92f3a4197d4b39e9", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-0321840003554c66876d86c353a18757"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-2f66c1e7ec1148adbc40c1a8e72ac11e", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-2f66c1e7ec1148adbc40c1a8e72ac11e", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-da0373ce6ee340ce9cacf27340619107"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-0db779ef22734a489e261807c8ec6002", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-0db779ef22734a489e261807c8ec6002", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-cf93a2e1625f426ba951dcab2fc66462"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-8d122b7849c040738836fc5a2216f2a0", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-8d122b7849c040738836fc5a2216f2a0", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-5dedbcdee5a44452ae83df75e5af8af8"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-0a86d4f870ac40f699cfccc43f035629", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-0a86d4f870ac40f699cfccc43f035629", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-1ec56d25bc5b401f8dae04c12f7d19f3"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-5885c57cf5644bbabf6c97dcbc7cbcaf", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-5885c57cf5644bbabf6c97dcbc7cbcaf", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-02e2fc2cfec44d11a4b521736d7042e4"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-332f7988ba4b443e9570c1dba5082a12", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-332f7988ba4b443e9570c1dba5082a12", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-3badeef5fc964e2a817582585adc3a5c"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-141380c8f6c64209ac96cbfba46c3177", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-141380c8f6c64209ac96cbfba46c3177", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-b081c8b14ac24cf7912fbb5b8b3dc27a"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-137b46c8a44e4eb59ce518f54208157a", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-137b46c8a44e4eb59ce518f54208157a", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-7d74e078a6214a0fa2d400d316f48b5d"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-1728f84b618b448ea14e5dc037a76be7", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-1728f84b618b448ea14e5dc037a76be7", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-c606f5b6e79047038c23eea299be3211"});
+									dataFoldersContent.push({folderid:"id-ff774683239d49a587a32d5de0c1a2a2", contentid:"id-699d688ff2d148daadc64478dd5e069b", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-699d688ff2d148daadc64478dd5e069b", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30bad1408dd84ca28d7eab35c8370e2e", targetid:"id-2341603fe50c4cf8a9ade9461bd022dd"});
+
+								dataFoldersContent.push({folderid:"id-7c1b4d800e144b548eca3b62cc70a09d", contentid:"id-6571942c184f4db087dc3c6bde772c84", contenttype:"Folder"});
+								dataFolders.push({id:"id-6571942c184f4db087dc3c6bde772c84", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-6571942c184f4db087dc3c6bde772c84", contentid:"id-6a38749a09a242de9c35cb75e461df95", contenttype:"Folder"});
+									dataFolders.push({id:"id-6a38749a09a242de9c35cb75e461df95", type:"Folder", name:decodeURL("1.+Introductie"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-6a38749a09a242de9c35cb75e461df95", contentid:"id-3e85bb6325e044969ce56f87ffea3076", contenttype:"SketchModel"});
+											dataViews.push({id:"id-3e85bb6325e044969ce56f87ffea3076", type:"SketchModel", name:decodeURL("1.1+Inleiding"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-6a38749a09a242de9c35cb75e461df95", contentid:"id-56364278608b41c2abf03fb62b42c584", contenttype:"SketchModel"});
+											dataViews.push({id:"id-56364278608b41c2abf03fb62b42c584", type:"SketchModel", name:decodeURL("1.2+Agile"), documentation:decodeURL("De+werking+van+dit+instrument+in+Agile+organisaties")});
+
+									dataFoldersContent.push({folderid:"id-6571942c184f4db087dc3c6bde772c84", contentid:"id-0412a4eec2ce407994c971b400b8a3a5", contenttype:"Folder"});
+									dataFolders.push({id:"id-0412a4eec2ce407994c971b400b8a3a5", type:"Folder", name:decodeURL("2.+Aandachtsgebieden"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-0412a4eec2ce407994c971b400b8a3a5", contentid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-6fcb9022e4ab49ceb995d41aa2fa9605", type:"ArchimateDiagramModel", name:decodeURL("2.1+De+17+aandachtsgebieden"), documentation:decodeURL("We+zien+17+gebieden+die+een+rol+spelen+bij+het+werken+onder+architectuur+en+waaraan+aandacht+besteed+moet+worden+bij+het+invullen+van+de+architectuurfunctie.")});
+													dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-30bad1408dd84ca28d7eab35c8370e2e", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-161b688cf8c54a56ab97de4d48e4fc95", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-5b51ac742e1c4b37a4d527da649f3cd9", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-62f5dcce4c6c49febb3ed7f098aeecd2", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-eb1c63f665b4414381436b30dc1c5d71", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-62f8d46c00c7492289d7fce6eee20756", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-dc65d7582da54a1c99c9fb4c9898cfc0", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-0321840003554c66876d86c353a18757", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-da0373ce6ee340ce9cacf27340619107", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-cf93a2e1625f426ba951dcab2fc66462", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-5dedbcdee5a44452ae83df75e5af8af8", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-1ec56d25bc5b401f8dae04c12f7d19f3", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-02e2fc2cfec44d11a4b521736d7042e4", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-3badeef5fc964e2a817582585adc3a5c", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-b081c8b14ac24cf7912fbb5b8b3dc27a", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-7d74e078a6214a0fa2d400d316f48b5d", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-c606f5b6e79047038c23eea299be3211", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-2341603fe50c4cf8a9ade9461bd022dd", contenttype:"Capability"});
+													
+
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-0840b97dae2443ffb0a64534c3ba26c0", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-bea0a72f3c724ae1837bbff64efdf95a", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-0d4c7179d7c54c2daa30a4d473008b85", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-c2954e76e1894946b6592c684b7ca636", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-93c5cad3df324ae09b2decf74f43773a", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-575d224b826949e4940d452889948a57", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-51646ff64242421c92f3a4197d4b39e9", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-2f66c1e7ec1148adbc40c1a8e72ac11e", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-0db779ef22734a489e261807c8ec6002", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-8d122b7849c040738836fc5a2216f2a0", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-0a86d4f870ac40f699cfccc43f035629", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-5885c57cf5644bbabf6c97dcbc7cbcaf", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-332f7988ba4b443e9570c1dba5082a12", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-141380c8f6c64209ac96cbfba46c3177", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-137b46c8a44e4eb59ce518f54208157a", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-1728f84b618b448ea14e5dc037a76be7", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-6fcb9022e4ab49ceb995d41aa2fa9605", contentid:"id-699d688ff2d148daadc64478dd5e069b", contenttype:"AggregationRelationship"});
+
+													
+
+
+
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
